@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: #f7fafc;
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84fab0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7deda6;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 400px;
+}
+
+.portfolio-card img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.body-heading {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.body-heading span {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.section {
+  min-height: 100vh;
+  margin-left: 200px; /* Ensure this matches the width of the fixed column */
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* For screens smaller than 992px (the width at which Bootstrap switches from col-md to col-sm) */
+@media (max-width: 991.98px) {
+  .col-md-3 {
+    position: static; /* Make the sidebar position static */
+  }
+
+  .section {
+    margin-left: 0px; /* Ensure this matches the width of the fixed column */
+  }
+}
+
+/* For screens smaller than 768px (the width at which Bootstrap switches from col-sm to col-xs) */
+@media (max-width: 767.98px) {
+  .col-md-3 {
+    display: none; /* Hide the sidebar */
+  }
+  .col-md-9 {
+    width: 100%; /* Make the main content full width */
+  }
+
+  .section {
+    margin-left: 0px; /* Ensure this matches the width of the fixed column */
+  }
+}
+
+.jw-button {
+  background-color: #84fab0;
+  border: none;
+  border-radius: 8px;
+  color: rgb(28, 28, 28);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.jw-button:hover {
+  background-color: #7deda6;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #cbcbcb;
+}
+
+.skill-box h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.skill-box i {
+  font-size: 60px;
+}
+
+.html {
+  color: #ff7f50;
+}
+
+.css {
+  color: #2196f3;
+}
+
+.js {
+  color: #f44336;
+}
+
+.python {
+  color: #3f51b5;
+}
+
+.react {
+  color: #008e96;
+}
+
+.php {
+  color: #aeb2d5;
+}
+
+.nodejs {
+  color: #215732;
+}
+
+.mysql {
+  color: #00758f;
+}
+
+.git {
+  color: #f1502f;
+}
+
+.aws {
+  color: #ff9900;
+}
+
+.role-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.grey-hr {
+  border: 1px solid #cbcbcb;
+  margin: 20px 0;
+}
+
+.social-links {
+  cursor: pointer;
+}
