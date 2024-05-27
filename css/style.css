@@ -86,7 +86,7 @@ body {
   }
 
   .section {
-    margin-left: 0px; /* Ensure this matches the width of the fixed column */
+    margin-left: 0px;
   }
 }
 
@@ -100,7 +100,7 @@ body {
   }
 
   .section {
-    margin-left: 0px; /* Ensure this matches the width of the fixed column */
+    margin-left: 0px;
   }
 }
 
