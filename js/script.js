@@ -9,26 +9,20 @@ const ghLink = document.getElementById('ghLink');
 let projectBtn = document.getElementById('projectBtn');
 let githubBtn = document.getElementById('githubBtn');
 
-projectBtn.addEventListener('click', (event) => {
-    let projectUrl = event.target.getAttribute('data-url');
-    window.open(projectUrl, "_blank");
-});
-githubBtn.addEventListener('click', (event) => {
-    let githubUrl = event.target.getAttribute('data-gh-url');
-    window.open(githubUrl, "_blank");
-});
+let projectBtns = document.querySelectorAll('.projectBtn');
+let githubBtns = document.querySelectorAll('.githubBtn');
 
-scrollToSection2.addEventListener('click', () => {
-    section2.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+projectBtns.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        let projectUrl = event.target.getAttribute('data-url');
+        window.open(projectUrl, "_blank");
     });
 });
 
-scrollToSection3.addEventListener('click', () => {
-    section3.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+githubBtns.forEach(btn => {
+    btn.addEventListener('click', (event) => {
+        let githubUrl = event.target.getAttribute('data-gh-url');
+        window.open(githubUrl, "_blank");
     });
 });
 
