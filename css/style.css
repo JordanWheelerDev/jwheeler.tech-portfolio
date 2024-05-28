@@ -119,7 +119,26 @@ body {
   transition: all 0.4s ease;
 }
 
+.jw-button-sm {
+  background-color: #84fab0;
+  border: none;
+  border-radius: 8px;
+  color: rgb(28, 28, 28);
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
 .jw-button:hover {
+  background-color: #7deda6;
+}
+
+.jw-button-sm:hover {
   background-color: #7deda6;
 }
 
@@ -183,7 +202,7 @@ body {
 }
 
 .role-text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -194,4 +213,72 @@ body {
 
 .social-links {
   cursor: pointer;
+}
+
+.project-box {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #cbcbcb;
+}
+
+.project-box .project-name {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.project-box .project-description {
+  font-weight: 300;
+}
+
+.project-box .project-tech-stack .stack {
+  background-color: #ebebeb;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.project-box .project-tech-stack .in-progress {
+  background-color: #ffbf50;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+#contactMe input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contactMe textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.quotes {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#quote-text {
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fade.in {
+  opacity: 1;
 }

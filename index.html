@@ -23,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="js/quotes.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -38,11 +39,28 @@
             <div class="text-center mb-3">
               <h3>Jordan W</h3>
             </div>
-            <div class="mb-3 role-text text-center">Full Stack Developer</div>
+            <div class="mb-4 role-text text-center">
+              Full Stack Developer, Loving Father & Husband.
+            </div>
+            <div class="mb-4 quotes">
+              <em id="quote-text" class="fade"></em>
+            </div>
             <hr class="grey-hr" />
             <div class="text-center">
-              <span class="social-links" id="ghLink"
-                ><i class="fa-brands fa-github fa-2x"></i
+              <span class="social-links" id="ghLink" style="margin-right: 10px"
+                ><i class="fa-brands fa-github"></i
+              ></span>
+              <span
+                class="social-links"
+                id="emailLink"
+                style="margin-right: 10px"
+                ><i class="fa-solid fa-envelope"></i
+              ></span>
+              <span
+                class="social-links"
+                id="linkedInLink"
+                style="margin-right: 10px"
+                ><i class="fa-brands fa-linkedin"></i
               ></span>
             </div>
           </div>
@@ -150,7 +168,7 @@
                     <div class="mb-3">
                       <i class="fa-brands fa-aws aws"></i>
                     </div>
-                    <div><h4>Git</h4></div>
+                    <div><h4>AWS</h4></div>
                   </div>
                 </div>
               </div>
@@ -163,8 +181,163 @@
           </div>
           <div class="section" id="section3">
             <div class="section-content">
-              <div class="body-heading text-center mb-3">Contact Me</div>
-              <p>Coming soon</p>
+              <div class="body-heading text-center mb-3">
+                <span>My Projects</span>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                  <div class="project-box">
+                    <div class="project-name mb-3 text-center">QRify</div>
+                    <div class="project-description">
+                      QRify is an online QR code generator with styling options.
+                      Generate QR codes from contacts to WiFi connection.
+                    </div>
+                    <hr class="grey-hr" />
+                    <div class="project-tech-stack">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                      <span>PHP</span>
+                      <span>MySQL</span>
+                    </div>
+                    <hr class="grey-hr" />
+                    <button
+                      class="jw-button-sm"
+                      id="projectBtn"
+                      data-url="https://qrify.lol"
+                    >
+                      <i class="fa-solid fa-link"></i> View QRify
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="project-box">
+                    <div class="project-name mb-3 text-center">Resumify</div>
+                    <div class="project-description">
+                      Resumify is an online resume builder with a few premade
+                      templates. Users can edit the resume as they wish and
+                      download as a PDF.
+                    </div>
+                    <hr class="grey-hr" />
+                    <div class="project-tech-stack">
+                      <span class="stack">HTML</span>
+                      <span class="stack">CSS</span>
+                      <span class="stack">JavaScript</span>
+                      <span class="in-progress">In Progress</span>
+                    </div>
+                    <hr class="grey-hr" />
+                    <button
+                      class="jw-button-sm"
+                      id="projectBtn"
+                      data-url="https://jordanwheelerdev.github.io/resumify/"
+                    >
+                      <i class="fa-solid fa-link"></i> View Resumify
+                    </button>
+                    <button
+                      class="jw-button-sm"
+                      id="githubBtn"
+                      data-gh-url="https://github.com/jordanwheelerdev/resumify/"
+                    >
+                      <i class="fa-brands fa-github"></i> View on GitHub
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="project-box">
+                    <div class="project-name mb-3 text-center">Trivify</div>
+                    <div class="project-description">
+                      Resumify is an online Trivia game built with HTML, CSS and
+                      JavaScript. The purpose of this project was to develop
+                      something that end users could use to test their knowledge
+                      on various topics.
+                    </div>
+                    <hr class="grey-hr" />
+                    <div class="project-tech-stack">
+                      <span class="stack">HTML</span>
+                      <span class="stack">CSS</span>
+                      <span class="stack">JavaScript</span>
+                      <span class="in-progress">In Progress</span>
+                    </div>
+                    <hr class="grey-hr" />
+                    <button
+                      class="jw-button-sm"
+                      id="projectBtn"
+                      data-url="https://jordanwheelerdev.github.io/Trivify/"
+                    >
+                      <i class="fa-solid fa-link"></i> View Trivify
+                    </button>
+                    <button
+                      class="jw-button-sm"
+                      id="githubBtn"
+                      data-gh-url="https://github.com/jordanwheelerdev/Trivify/"
+                    >
+                      <i class="fa-brands fa-github"></i> View on GitHub
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="project-box">
+                    <div class="project-name mb-3 text-center">
+                      More coming soon!
+                    </div>
+                    <div class="project-description">
+                      More projects will be posted here when they are pretty
+                      enough to show you :)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center">
+                <button class="jw-button" id="scrollToSection4">
+                  Contact Me
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="section" id="section4">
+            <div class="section-content">
+              <div class="body-heading text-center mb-3">
+                <span>Contact Me</span>
+              </div>
+              <div class="mb-4" id="contactMeMessage">
+                <p>
+                  If you're interested in getting in touch with me, you can
+                  email me at
+                  <a href="mailto:hello@jwheeler.tech">hello@jwheeler.tech</a>.
+                  Alternatively, you can fill the form below and I will try to
+                  get back to your as soon as I can!
+                </p>
+              </div>
+              <div id="contactMe" class="text-center">
+                <div class="mb-3">
+                  <input type="text" id="yourName" placeholder="Your Name" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" id="yourEmail" placeholder="Your Email" />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    rows="4"
+                    id="yourMessage"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button class="jw-button" id="sendMessage">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+              <div
+                id="successMessage"
+                class="text-center"
+                style="display: none"
+              >
+                <p>
+                  Your message has been sent to me successfully, I will be in
+                  contact soon!
+                </p>
+              </div>
             </div>
           </div>
         </div>
