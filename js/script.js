@@ -5,6 +5,8 @@ const section3 = document.getElementById('section3');
 const scrollToSection4 = document.getElementById('scrollToSection4');
 const section4 = document.getElementById('section4');
 const ghLink = document.getElementById('ghLink');
+const emailLink = document.getElementById('emailLink');
+const linkedInLink = document.getElementById('linkedInLink');
 
 let projectBtn = document.getElementById('projectBtn');
 let githubBtn = document.getElementById('githubBtn');
@@ -31,6 +33,18 @@ scrollToSection4.addEventListener('click', () => {
         behavior:'smooth',
         block:'start'
     });
+});
+
+ghLink.addEventListener('click', () => {
+    window.open('https://github.com/JordanWheelerDev', "_blank");
+});
+
+emailLink.addEventListener('click', () => {
+    window.open('mailto:hello@jwheeler.tech', "_blank");
+});
+
+linkedInLink.addEventListener('click', () => {
+    window.open('https://linkedin.com/in/jordan-wheeler-926a34301/', "_blank");
 });
 
 const sendMessageButton = document.getElementById('sendMessage');
