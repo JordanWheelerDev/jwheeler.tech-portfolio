@@ -28,6 +28,20 @@ githubBtns.forEach(btn => {
     });
 });
 
+scrollToSection2.addEventListener('click', () => {
+    section2.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+scrollToSection3.addEventListener('click', () => {
+    section3.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
 scrollToSection4.addEventListener('click', () => {
     section4.scrollIntoView({
         behavior:'smooth',
